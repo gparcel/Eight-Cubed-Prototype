@@ -1349,11 +1349,13 @@ Tasks & Marketing Task Edit
 }
 select.task-edit-assignee {
 	display: inline-block;
-	height: 35px;
+	height: 20px;
 	width: 210px;
 	margin-right: 17px;
 }
 .task-edit-date {
+	padding: 0;
+	height: 25px;
 	width: 120px;
 }
 
