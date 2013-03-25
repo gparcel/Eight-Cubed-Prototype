@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>8 Cubed</title>
+	<link rel="stylesheet" href="assets/css/styles.css?v2">
+</head>
+<body>
+	<div id="property-detail" class="stage-escrow">
+		<div class="property-control-top">
+			<div class="layout-main-width">
+				<h1>Property Detail</h1>
+				<a href="index.html" class="control-close">Close</a>
+			</div>
+		</div>
+		<div class="property-badge">
+			<div class="layout-main-width property-badge-view">
+				<div class="property-image">
+					<img src="assets/im/property-16s.jpg" height="136" width="261" alt="Property Thumbnail" />
+					<span class="image-count">6 images</span>
+				</div>
+				<h1 class="property-name">St. Lukes South</h1>
+				<div class="property-address">12541 Foster, Overland Park, KS 66213</div>
+				<div class="property-financial">
+					<strong class="property-price">$16,531,090</strong>
+					<strong class="property-commission">($371,949)</strong>
+				</div>
+				<div class="property-summary clearfix">
+					<div class="property-type">Medical <span class="property-type-icon"></span></div>
+					<div class="property-stage">
+						Escrow
+						<ul class="progress-bar">
+							<li></li>
+							<li></li>
+							<li class="on"></li>
+						</ul>
+					</div>
+					<div class="property-probability">Probability <strong>95%</strong></div>
+					<button type="button" class="control-edit">Edit</button>
+				</div>
+			</div>
+			<div class="property-badge-edit">
+				<div class="property-info-entry clearfix">
+					<div class="layout-main-width ">
+						<ul class="layout-form-wrapper layout-half clearfix">
+							<li class="form-item">
+								<label for="edit-property-name">Property Name</label>
+								<input type="text" id="edit-property-name" value="St. Lukes South">
+							</li>
+							<li class="form-item form-group-last">
+								<label for="edit-property-type">Property Type</label>
+								<select name="edit-property-type" >
+									<option value="">Retail</option>
+									<option value="">Office</option>
+									<option value="">Industrial</option>
+									<option value="">NNN</option>
+									<option value="">Hotel</option>
+									<option value="">Multi-family</option>
+									<option value="" selected="selected">Medical</option>
+								</select>
+							</li>
+							<li class="form-item">
+								<label for="edit-property-street">Street</label>
+								<input type="text" id="edit-property-street" value="12541 Foster">
+							</li>
+							<li class="form-item">
+								<label for="edit-property-city">City</label>
+								<input type="text" id="edit-property-city" value="Overland Park">
+							</li>
+							<li class="form-item edit-property-location">
+								<label for="edit-property-state">State</label>
+								<input type="text" id="edit-property-state" value="KS">
+								<label for="edit-property-zip">Zip</label>
+								<input type="text" id="edit-property-zip" value="66213">
+							</li>
+						</ul>
+						<ul class="layout-form-wrapper layout-half clearfix">
+							<li class="form-item">
+								<label for="edit-property-price">Price</label>
+								<input type="text" id="edit-property-price" value="16,531,090">
+							</li>
+							<li class="form-item form-group-last">
+								<label for="edit-property-commission">Commission</label>
+								<input type="text" id="edit-property-commission" value="371,949">
+							</li>
+							<li class="form-item">
+								<span class="form-label">Stage</span>
+								<div class="button-set clearfix">
+									<button type="button">Proposal</button>
+									<button type="button">Listing</button>
+									<button type="button" class="selected">Escrow</button>
+								</div>
+							</li>
+							<li class="form-item">
+								<label for="edit-property-probability">Probability</label>
+								<input type="text" id="edit-property-probability" value="95">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="property-thumbs">
+					<ul class="layout-main-width">
+						<li><img src="assets/im/property-16.jpg" height="107" width="205" alt="Property Thumbnail" /><button type="button" class="item-remove">Remove</button></li>
+						<li><img src="assets/im/property-17.jpg" height="107" width="205" alt="Property Thumbnail" /><button type="button" class="item-remove">Remove</button></li>
+					</ul>
+				</div>
+				<div class="control-bottom">
+					<div class="layout-main-width">
+						<button type="button" class="control-upload">Upload Photo</button>
+						<button type="button" class="control-save">save</button>
+						<button type="button" class="control-cancel">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="layout-main-width clearfix">
+				<aside class="layout-one-third">
+					<section id="team">
+						<strong>Team</strong>
+						<ul class="section-body">
+							<li class="team-member">
+								<strong class="member-name"><a href="mailto:mbennet@ngkf.com">Michael Bennett</a></strong>
+								<span class="member-role">Agent</span>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="team-member">
+								<strong class="member-name"><a href="mailto:mbennet@ngkf.com">Brittany Marian</a></strong>
+								<span class="member-role">Agent</span>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="team-member">
+								<strong class="member-name"><a href="mailto:mbennet@ngkf.com">Mary Barney</a></strong>
+								<span class="member-role">Agent</span>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+							<button type="button" class="control-done">Done</button>
+						</div>
+					</section>
+					<section id="contacts">
+						<strong>Contacts</strong>
+						<ul class="section-body">
+							<li class="contact-individual">
+								<strong class="contact-name"><a href="mailto:mbennet@ngkf.com">Michael Bennett</a></strong>
+								<span class="contact-role">Agent</span>
+								<a href="mailto:mbennet@ngkf.com" class="contact-email">mbennet@ngkf.com</a>
+								<a href="tell:+13125555555" class="contact-phone">(312) 555-5555</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="contact-individual">
+								<strong class="contact-name"><a href="mailto:mbennet@ngkf.com">Michael Bennett</a></strong>
+								<span class="contact-role">Agent</span>
+								<a href="mailto:mbennet@ngkf.com" class="contact-email">mbennet@ngkf.com</a>
+								<a href="tell:+13125555555" class="contact-phone">(312) 555-5555</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="contact-individual">
+								<strong class="contact-name"><a href="mailto:mbennet@ngkf.com">Michael Bennett</a></strong>
+								<span class="contact-role">Agent</span>
+								<a href="mailto:mbennet@ngkf.com" class="contact-email">mbennet@ngkf.com</a>
+								<a href="tell:+13125555555" class="contact-phone">(312) 555-5555</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+							<button type="button" class="control-done">Done</button>
+						</div>
+					</section>
+					<section id="documents">
+						<strong>Documents</strong>
+						<ul class="section-body">
+							<li class="documents-file">
+								<a href="#" class="document-link">File Name.pdf</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="documents-file">
+								<a href="#" class="document-link">File Name.pdf</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="documents-file">
+								<a href="#" class="document-link">File Name.pdf</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="documents-file">
+								<a href="#" class="document-link">File Name.pdf</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+							<button type="button" class="control-done">Done</button>
+						</div>
+					</section>
+					<section id="useful-links">
+						<strong>Useful Links</strong>
+						<ul class="section-body">
+							<li class="link-item">
+								<a href="http://www.listinglab.com">Listing Lab</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="link-item">
+								<a href="http://www.google.com">Google</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li class="link-item">
+								<a href="http://www.twitter.com">Twitter</a>
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+							<button type="button" class="control-done">Done</button>
+						</div>
+					</section>
+				</aside>
+				<div class="layout-two-third">
+					<section id="progress">
+						<strong>Progress</strong>
+						<div class="section-body">
+							<ul class="progress-bar">
+								<li><span class="progress-pointer"></span></li>
+								<li><span class="progress-pointer"></span></li>
+								<li class="on selected"><span class="progress-pointer"></span></li>
+								<li><span class="progress-pointer"></span></li>
+								<li><span class="progress-pointer"></span></li>
+							</ul>
+						</div>
+					</section>
+					<section id="tasks">
+						<strong>Tasks</strong>
+						<div class="section-control-top">
+							<button type="button" class="control-view-completed" data-function="show">View Completed</button>
+						</div>
+						<ul class="section-body task-view">
+							<li class="tasks-item task-overdue completed clearfix">
+								<button type="button" class="task-checkbox done"></button>
+								<strong class="task-name">Change the price to $7,000,000</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-overdue clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Update the Maps</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-high-priority clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">FedEx package to Bill Smith</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-high-priority clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Change the price to $7,000,000</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-high-priority clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Send client thank you note</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Ashley Marian</span>
+							</li>
+							<li class="tasks-item clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Upload the CA</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Ashley Marian</span>
+							</li>
+						</ul>
+						<ul class="task-edit">
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Change the price to $7,000,000" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Update the Maps" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="FedEx package to Bill Smith" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Change the price to $7,000,000" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Send client thank you note" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Upload the CA" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+							<button type="button" class="control-done">Done</button>
+						</div>
+					</section>
+					<section id="marketing">
+						<strong>Marketing</strong>
+						<div class="section-control-top">
+							<button type="button" class="control-view-completed" data-function="show">View Completed</button>
+						</div>
+						<ul class="section-body task-view">
+							<li class="tasks-item task-overdue completed clearfix">
+								<button type="button" class="task-checkbox done"></button>
+								<strong class="task-name">Upload to Listing Lab</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-overdue completed clearfix">
+								<button type="button" class="task-checkbox done"></button>
+								<strong class="task-name">Create Email Blast</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-overdue completed clearfix">
+								<button type="button" class="task-checkbox done"></button>
+								<strong class="task-name">Contact Client</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Mike</span>
+							</li>
+							<li class="tasks-item task-overdue completed clearfix">
+								<button type="button" class="task-checkbox done"></button>
+								<strong class="task-name">Place on Internet</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-high-priority clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Send Email Blast</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-high-priority clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Create Postcard</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item task-high-priority clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Call Prospects</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Mike</span>
+							</li>
+							<li class="tasks-item clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Send Postcard</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+							<li class="tasks-item clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Call 2nd Round of Prospects</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Mike</span>
+							</li>
+							<li class="tasks-item clearfix">
+								<button type="button" class="task-checkbox"></button>
+								<strong class="task-name">Email Brokers</strong>
+								<time class="task-time" datetime="2013-03-13">03-13-13</time>
+								<span class="task-assignee">Brittany</span>
+							</li>
+						</ul>
+						<ul class="task-edit">
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Send Email Blast" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Create Postcard" />
+								<select class="task-edit-assignee" >
+									<option value="">Michael Bennett</option>
+									<option value="" selected="selected">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Call Prospects" />
+								<select class="task-edit-assignee" >
+									<option value="" selected="selected">Michael Bennett</option>
+									<option value="">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Send Postcard" />
+								<select class="task-edit-assignee" >
+									<option value="" selected="selected">Michael Bennett</option>
+									<option value="">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Call 2nd Round of Prospects" />
+								<select class="task-edit-assignee" >
+									<option value="" selected="selected">Michael Bennett</option>
+									<option value="">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+							<li>
+								<input type="text" class="task-edit-name" placeholder="Task" value="Email Brokers" />
+								<select class="task-edit-assignee" >
+									<option value="" selected="selected">Michael Bennett</option>
+									<option value="">Brittany Marian</option>
+									<option value="">Mary Barney</option>
+								</select>
+								<input type="date" class="task-edit-date" value="2013-03-13" />
+								<button type="button" class="item-remove">Remove</button>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+							<button type="button" class="control-done">Done</button>
+						</div>
+					</section>
+					<section id="offer-matrix">
+						<strong>Offer Matrix</strong>
+						<ul class="section-body">
+							<li class="offer-matrix-item clearfix">
+								<strong class="offer-buyer">Buyer/Company Name</strong>
+								<span class="offer-buyer-contact">Melanie Oak</span>
+								<span class="offer-buyer-phone">(312) 555-5555</span>
+								<span class="offer-amount">$2,500,00</span>
+								<time class="offer-date" datetime="2013-03-13">03-13-13</time>
+							</li>
+							<li class="offer-matrix-item clearfix">
+								<strong class="offer-buyer">Buyer/Company Name</strong>
+								<span class="offer-buyer-contact">Melanie Oak</span>
+								<span class="offer-buyer-phone">(312) 555-5555</span>
+								<span class="offer-amount">$2,500,00</span>
+								<time class="offer-date" datetime="2013-03-13">03-13-13</time>
+							</li>
+							<li class="offer-matrix-item clearfix">
+								<strong class="offer-buyer">Buyer/Company Name</strong>
+								<span class="offer-buyer-contact">Melanie Oak</span>
+								<span class="offer-buyer-phone">(312) 555-5555</span>
+								<span class="offer-amount">$2,500,00</span>
+								<time class="offer-date" datetime="2013-03-13">03-13-13</time>
+							</li>
+							<li class="offer-matrix-item clearfix">
+								<strong class="offer-buyer">Buyer/Company Name</strong>
+								<span class="offer-buyer-contact">Melanie Oak</span>
+								<span class="offer-buyer-phone">(312) 555-5555</span>
+								<span class="offer-amount">$2,500,00</span>
+								<time class="offer-date" datetime="2013-03-13">03-13-13</time>
+							</li>
+							<li class="offer-matrix-item clearfix">
+								<strong class="offer-buyer">Buyer/Company Name</strong>
+								<span class="offer-buyer-contact">Melanie Oak</span>
+								<span class="offer-buyer-phone">(312) 555-5555</span>
+								<span class="offer-amount">$2,500,00</span>
+								<time class="offer-date" datetime="2013-03-13">03-13-13</time>
+							</li>
+						</ul>
+						<div class="section-control-bottom">
+							<button type="button" class="control-add">+Add</button>
+							<button type="button" class="control-edit">Edit</button>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal  modal-offer-details">
+		<div class="modal-wrap">
+			<div class="modal-control-top">
+				<strong>Offer Details</strong>
+				<button type="button" class="control-close">Close</button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-section">
+					<h2>XYZ Partners</h2>
+					<strong class="offer-buyer">Buyer/Company Name</strong>
+					<span class="offer-buyer-contact">Melanie Oak</span>
+					<span class="offer-buyer-phone">(312) 555-5555</span>
+				</div>
+				<div class="offer-financing modal-section clearfix">
+					<ul>
+						<li>
+							<span>Offer</span>
+							<strong>$2,500,000</strong>
+						</li>
+						<li>
+							<span>Deposit</span>
+							<strong>$1,000,000</strong>
+						</li>
+						<li>
+							<span>Financing</span>
+							<strong>JPMorgan Chase</strong>
+						</li>
+						<li>
+							<span>Offer Date</span>
+							<strong>03-13-13</strong>
+						</li>
+						<li>
+							<span>Due Diligence</span>
+							<strong>30 Days</strong>
+						</li>
+						<li>
+							<span>Closing Date</span>
+							<strong>03-13-13</strong>
+						</li>
+					</ul>
+				</div>
+				<div class="modal-section">
+					<ul>
+						<li>
+							<span>Broker</span>
+							<strong>ABC Residential Brokerage</strong>
+						</li>
+						<li class="offer-notes">
+							<span>Notes</span>
+							<div>
+								<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-control-bottom">
+				<button type="button">Edit</button>
+				<button type="button" class="control-close control-r">Close</button>
+			</div>
+		</div>
+		<div class="modal-background"></div>
+	</div>
+
+	<script src="assets/js/jquery-1.9.1.min.js"></script>
+	<script src="assets/js/scripts.js"></script></body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>8 Cubed</title>
+	<link rel="stylesheet" href="assets/css/styles.css?v2">
+</head>
+<body>
+<div id="dashboard">
+	<header id="main-control">
+		<div class="layout-main-width">
+			<ol class="clearfix">
+				<li class="on"><a href="#all">All</a></li>
+				<li><a href="#proposal">Proposals</a></li>
+				<li><a href="#listing">Listings</a></li>
+				<li><a href="#escrow">Escrow</a></li>
+				<li><a href="#offer">Offers</a></li>
+			</ol>
+			<div id="main-reminders" class="dropdown">
+				<strong class="dropdown-trigger">3</strong>
+				<ul class="reminders-menu dropdown-menu">
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<span class="reminder-property">Property Name</span>
+						<strong>Task Name</strong>
+						<time>03/13/13</time>
+						<span class="reminder-assignee">Ashley Marian</span>
+					</li>
+				</ul>
+			</div>
+			<div class="main-user-menu dropdown">
+				<span class="dropdown-trigger"><img src="assets/im/sample-user-thumb.jpg" alt="agent" height="30" width="30" /></span>
+				<ul class="dropdown-menu">
+					<li>Account Settings</li>
+					<li>Deactivated Properties</li>
+					<li>Logout</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+	<div id="dashboard-badge">
+		<div class="layout-main-width">
+			<ul class="badge-property-count clearfix">
+				<li class="proposals">
+					<strong>3</strong>
+					<span>Proposals</span>
+				</li>
+				<li class="listings">
+					<strong>8</strong>
+					<span>Listings</span>
+				</li>
+				<li class="escrows">
+					<strong>8</strong>
+					<span>Escrows</span>
+				</li>
+			</ul>
+			<div class="badge-property-count-total"><span>Total Properties</span> <strong>19</strong></div>
+			<div class="badge-property-total-value"><span>Total Property Value</span> <strong>$324,000,000</strong></div>
+			<div class="badge-property-total-commission"><span>Potential Commission</span> <strong>$324,000</strong></div>
+		</div>
+	</div>
+	<div id="dashboard-properties">
+		<div id="dashboard-properties-control">
+			<div class="layout-main-width">
+				<button type="button" class="control-add" data-function="add-property"><strong>+</strong> Add</button>
+				<div class="control-sort dropdown">
+					<button type="button" class="dropdown-trigger">Sort By</button>
+					<ul class="dropdown-menu">
+						<li>Probability</li>
+						<li>Last Modified</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="layout-main-width">
+			<div id="property-all-snapshot" class="clearfix">
+				<div class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</div>
+				<div class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="property-thumb" />
+					</div>
+					<strong>Property Name</strong>
+					<span class="snapshot-address">5959 N. Kenmore, Chicago, IL 60660</span>
+					<span class="snapshot-financial">$2.5mil ($250K)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">0%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+	<script src="assets/js/jquery-1.9.1.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

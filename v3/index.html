@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>8 Cubed</title>
+	<link rel="stylesheet" href="assets/css/styles.css?v2">
+</head>
+<body>
+<div id="dashboard">
+	<header id="main-control">
+		<div class="layout-main-width">
+			<ol class="clearfix">
+				<li class="on"><a href="#all">All</a></li>
+				<li><a href="#proposal">Proposals</a></li>
+				<li><a href="#listing">Listings</a></li>
+				<li><a href="#escrow">Escrow</a></li>
+				<li><a href="#offers">Offers</a></li>
+			</ol>
+			<div id="main-reminders" class="dropdown">
+				<strong class="dropdown-trigger">5</strong>
+				<ul class="reminders-menu dropdown-menu">
+					<li class="reminder-snapshot task-overdue clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Oregon Clinic</span>
+							<strong>Update the maps</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot task-overdue clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Oregon Clinic</span>
+							<strong>FedEx package to Bill Smith</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot task-high-priority clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Eastover Medical</span>
+							<strong>Change the price to $7,000,000</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot task-high-priority clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Spectrum Health</span>
+							<strong>Upload the CA</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot task-high-priority clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Eastover Medical</span>
+							<strong>Upload to Listing Lab</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot task-high-priority clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Yahara</span>
+							<strong>Create Email Blast</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">White Marsh</span>
+							<strong>Contact Client</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Tennova</span>
+							<strong>Call Prospects</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Mike</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Oregon Clinic</span>
+							<strong>Place on Internet</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">St. Lukes South</span>
+							<strong>Send Email Blast</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Brittany</span>
+						</a>
+					</li>
+					<li class="reminder-snapshot clearfix">
+						<a href="property-detail.html">
+							<span class="reminder-property">Tennova</span>
+							<strong>Call 2nd Round of Prospects</strong>
+							<time datetime="2013-03-13">03-13-13</time>
+							<span class="reminder-assignee">Mike</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-user-menu dropdown">
+				<span class="dropdown-trigger"><img src="assets/im/sample-user-thumb.jpg" alt="agent" height="30" width="30" /></span>
+				<ul class="dropdown-menu">
+					<li><a href="#">Account Settings</a></li>
+					<li><a href="#">Deactivated Properties</a></li>
+					<li><a href="report.html">Global Report</a></li>
+					<li><a href="login.html">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+	<div id="dashboard-badge">
+		<div class="layout-main-width">
+			<ul class="badge-property-count clearfix">
+				<li class="proposals">
+					<strong><em>5</em></strong>
+					<span>Proposals</span>
+				</li>
+				<li class="listings">
+					<strong><em>9</em></strong>
+					<span>Listings</span>
+				</li>
+				<li class="escrows">
+					<strong><em>5</em></strong>
+					<span>Escrows</span>
+				</li>
+			</ul>
+			<div class="badge-property-count-total"><span>Total Properties</span> <strong>19</strong></div>
+			<div class="badge-property-total-value"><span>Total Property Value</span> <strong>$350,962,298</strong></div>
+			<div class="badge-property-total-commission"><span>Potential Commission</span> <strong>$5,003,023</strong></div>
+		</div>
+	</div>
+	<div id="dashboard-properties">
+		<div id="dashboard-properties-control">
+			<div class="layout-main-width">
+				<button type="button" class="control-add" data-function="add-property"><strong>+</strong> Add</button>
+				<div class="control-sort dropdown">
+					<button type="button" class="dropdown-trigger">Sort By</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Probability</a></li>
+						<li><a href="#">Last Modified</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="layout-main-width">
+			<div id="property-all-snapshot" class="clearfix">
+				<a href="property-detail.html" class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-16.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>St. Lukes South</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">12541 Foster, Overland Park, KS 60660</span>
+					<span class="snapshot-financial">$16,531,090 ($371,949)</span>
+					<span class="snapshot-stage">Escrow</span>
+					<span class="snapshot-probability" title="Probability">95%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-4.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>MHO Westville</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">1668 South US 421, Westville, IN 46391</span>
+					<span class="snapshot-financial">$14,000,000 ($210,000)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">95%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-6.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Wilkes Barre</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_office.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">239 S Mountain Top Blvd, Mountain Top, PA 60660</span>
+					<span class="snapshot-financial">$4,372,000 ($65,580)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">95%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-7.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Tennova</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_retail.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">900 E Oak Hill Ave, Knoxville, TN 60660</span>
+					<span class="snapshot-financial">$53,000,000 ($530,000)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">95%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-14.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Eastover Medical</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">2630 E. 7th St, Charlotte, NC 60660</span>
+					<span class="snapshot-financial">$9,000,000 ($135,000)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">90%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-3.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Michiana Surgical MHO</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">5340 Holy Cross Pkwy, Mishawaka, IN 60660</span>
+					<span class="snapshot-financial">$21,740,000 ($217,400)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">90%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-17.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Yahara</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_office.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">1050 E Broadway, Monona, WI 60660</span>
+					<span class="snapshot-financial">$9,161,208 ($183,224)</span>
+					<span class="snapshot-stage">Escrow</span>
+					<span class="snapshot-probability" title="Probability">85%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-5.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Ethicus Hospital</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">4201 William D Tate Ave, Grapevine, TX 60660</span>
+					<span class="snapshot-financial">$23,000,000 ($287,500)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">85%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-9.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Spectrum Health</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">6105 Wilson Ave, Wyoming, MI 60660</span>
+					<span class="snapshot-financial">$18,000,000 ($270,000)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">75%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-12.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Brookside Medical</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_office.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">3600 SW Capital Ave, Battle Creek, MI 60660</span>
+					<span class="snapshot-financial">$12,000,000 ($180,000)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">75%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-1.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Cancer Care Partners</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">301 E Day Road, Mishawaka, IN 46545</span>
+					<span class="snapshot-financial">$26,600,000 ($399,000)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">75%</span>
+					<ul class="progress-bar">
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-15.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Illinois Medical Center</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">1001 Main St, Peoria, IL 60660</span>
+					<span class="snapshot-financial">$32,500,000 ($487,500)</span>
+					<span class="snapshot-stage">Escrow</span>
+					<span class="snapshot-probability" title="Probability">75%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Kaiser Permanente</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_industrial.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">1201 Hospital Drive, Fredericksburg, VA 60660</span>
+					<span class="snapshot-financial">$14,000,000 ($210,000)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">65%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-18.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Doctor&rsquo;s Hospital</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">411 S. Whitlock, Bremen, IN 60660</span>
+					<span class="snapshot-financial">$8,250,000 ($123,750)</span>
+					<span class="snapshot-stage">Escrow</span>
+					<span class="snapshot-probability" title="Probability">65%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Yelm Medical</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">105 Tahoma Blvd SE, Yelm, WA 60660</span>
+					<span class="snapshot-financial">$11,858,000 ($177,870)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">65%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-listing">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-2.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Unity Surgical</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">4455 Edison Lakes Pkwy, Mishawaka, IN 60660</span>
+					<span class="snapshot-financial">$30,165,000 ($452,475)</span>
+					<span class="snapshot-stage">Listing</span>
+					<span class="snapshot-probability" title="Probability">50%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-escrow">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-19.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Northwest Community</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_office.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">1538 Arlington Heights Rd, Arlington Heights, IL 60660</span>
+					<span class="snapshot-financial">$3,785,000 ($56,775)</span>
+					<span class="snapshot-stage">Escrow</span>
+					<span class="snapshot-probability" title="Probability">50%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="on"></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/sample-property-thumb.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>White Marsh</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_NNN.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">8114 Sandpiper Circle, White Marsh, MD 60660</span>
+					<span class="snapshot-financial">$7,000,000 ($105,000)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">50%</span>
+					<ul class="progress-bar">
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a href="property-detail.html" class="property-snapshot stage-proposal">
+					<div class="snapshot-thumb">
+						<img src="assets/im/property-11.jpg" height="107" width="205" alt="Property Thumbnail" />
+					</div>
+					<strong>Oregon Clinic</strong>
+					<span class="snapshot-property-type"><img src="assets/im/icn_medical.png" height="20" width="20" alt="Property Type: Office" /></span>
+					<span class="snapshot-address">1111 NE 99th Ave, Portland, OR 60660</span>
+					<span class="snapshot-financial">$36,000,000 ($540,000)</span>
+					<span class="snapshot-stage">Proposal</span>
+					<span class="snapshot-probability" title="Probability">25%</span>
+					<ul class="progress-bar">
+						<li></li>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+			</div>
+			<div id="offers">
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-4.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">MHO Westville</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-6.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">Wilkes Barre</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-7.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">Tennova</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-16.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">St. Lukes South</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-14.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">Eastover Medical</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-3.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">Michiana Surgical MHO</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-17.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">Yahara</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+				<div class="offer-item clearfix">
+					<div class="offer-property-thumb">
+						<img src="assets/im/property-5.jpg" alt="Property Thumbnail">
+					</div>
+					<ul class="offer-allfiles">
+						<strong class="offer-property-name">Ethicus Hospital</strong>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+						<li class="offer-file"><a href="#">File Name</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="layout-transition">
+	<div class="transition-top-bar"></div>
+	<div class="transition-badge-bar"></div>
+	<div class="transition-loading">Loading...</div>
+</div>
+
+	<script src="assets/js/jquery-1.9.1.min.js"></script>
+	<script src="assets/js/jquery-ui-1.10.2.custom.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

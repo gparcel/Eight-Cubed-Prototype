@@ -1,0 +1,868 @@
+/*****************************************************************************
+Resets
+*****************************************************************************/
+
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+/**
+ * YUI Reset
+ * @module reset
+ * @namespace
+ * @requires 
+ */
+html {
+	color: #000;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address, button, caption, cite, code, dfn, em, input,
+optgroup, option, select, strong, textarea, th, var {
+    font:inherit;
+}
+
+del, ins {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before, q:after {
+	content: '';
+}
+
+abbr, acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+/*****************************************************************************
+Base
+*****************************************************************************/
+@font-face {
+	font-family: 'BebasNeue';
+	src: url("../font/BebasNeue.otf");
+}
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url("../font/ProximaNovaBold.otf");
+}
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url("../font/ProximaNovaRegular.otf");
+}
+body {
+	font: 13px/18px ProximaNovaRegular, serif;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+button {
+	padding: 10px;
+	border: 0;
+	border-radius: 5px;
+	background-color: transparent;
+	color: #456073;
+	font-family: ProximaNovaBold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #cacaca;
+}
+button:active {
+	background-color: #aaa;
+}
+
+/*****************************************************************************
+Modules
+*****************************************************************************/
+
+	/*****************************************************************************
+	Drop Down
+	*****************************************************************************/
+	.dropdown {
+		position: relative;
+		display: inline;
+		color: #808080;
+	}
+	.dropdown-trigger {
+		cursor: pointer;
+	}
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		right: 0;
+		min-width: 205px;
+		margin-top: 15px;
+		border-radius: 0 0 5px 5px;
+		background-color: #fff;
+		box-shadow: 0 3px 10px 2px #444;
+		z-index: 3;
+	}
+	.dropdown-menu li {
+		padding: 10px;
+		cursor: pointer;
+	}
+	.dropdown-menu li:hover {
+		background-color: #ccc;
+	}
+	.dropdown-menu li:active {
+		background-color: #aaa;
+		color: #fff;
+	}
+
+	/*****************************************************************************
+	Progress Bar
+	*****************************************************************************/
+	.progress-bar {
+		position: absolute;
+		bottom: 25px;
+		left: 15px;
+		height: 4px;
+		background-color: #b3b3b3;
+		box-shadow: inset 0 1px 1px #7f7f7f;
+	}
+	.progress-bar li {
+		float: left;
+		height: 12px;
+		width: 12px;
+		margin: -4px 29px 0 0;
+		border-radius: 5px;
+		background-color: #b3b3b3;
+		box-shadow: inset 0 1px 2px #7f7f7f;
+	}
+	.progress-bar li:last-child,
+	.progress-bar li.on:last-child {
+		margin-right: 0;
+	}
+	.progress-bar li.on {
+		height: 16px;
+		width: 16px;
+		margin: -7px 27px 0 -2px;
+		border-radius: 8px;
+		box-shadow: 0 2px 2px #999;
+	}
+	.stage-proposal .progress-bar li.on {
+		background-color: #f4786f;
+	}
+	.stage-listing .progress-bar li.on {
+		background-color: #faaf3a;
+	}
+	.stage-escrow .progress-bar li.on {
+		background-color: #85abd2;
+	}
+
+
+/*****************************************************************************
+Layout
+*****************************************************************************/
+body {
+	background-color: #ccc;
+	overflow-y: scroll;
+}
+#dashboard {
+
+}
+.layout-main-width {
+	position: relative;
+	width: 768px;
+	margin: 0 auto;
+}
+.layout-one-third {
+	float: left;
+	width: 205px;
+	margin: 0 40px;
+}
+.layout-two-third {
+	width: 450px;
+	float: left;
+}
+#property-all-snapshot {
+	padding: 30px 20px;
+}
+
+/*****************************************************************************
+Dashboard Control
+*****************************************************************************/
+#main-control {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background-color: #456073;
+	box-shadow: 0 2px 3px #1c262e;
+	z-index: 2;
+}
+#main-control ol {
+	margin-left: 20px;
+}
+#main-control ol li {
+	float: left;
+}
+#main-control a {
+	display: block;
+	padding: 15px 20px 18px;
+	color: #b3b3b3;
+	/*font-family: ProximaNovaBold;*/
+	text-transform: uppercase;
+	text-shadow: 0 1px #171f25;
+	letter-spacing: 3px;
+	text-decoration: none;
+	cursor: pointer;
+}
+#main-control ol li.on a,
+#main-control ol li a:hover {
+	padding-top: 12px;
+	border-top: 3px solid #b3b3b3;
+	background-color: #1b262e;
+	color: #fff;
+	box-shadow: inset 0 -2px 3px 1px #11171d;
+}
+#main-control ol li a:active {
+	background-color: #131a20;
+}
+.main-user-menu {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+}
+.main-user-menu span {
+	display: block;
+	clear: both;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+/*****************************************************************************
+Main Reminders
+*****************************************************************************/
+#main-reminders {
+	position: absolute;
+	top: 10px;
+	right: 95px;
+}
+#main-reminders > strong {
+	display: block;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background-color: #25323c;
+	color: #b3b3b3;
+	text-align: center;
+	line-height: 30px;
+}
+.reminders-menu {
+	right: 0;
+	width: 360px;
+}
+.reminder-snapshot {
+	position: relative;
+}
+.reminder-snapshot strong {
+	display: block;
+	font-family: ProximaNovaBold;
+	font-size: 1.23em;
+}
+.reminder-snapshot time,
+.reminder-assignee {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.reminder-assignee {
+	top: auto;
+	bottom: 10px;
+}
+
+/*****************************************************************************
+Dashboard Badge
+*****************************************************************************/
+#dashboard-badge {
+	position: relative;
+	padding: 90px 0 40px;
+	background-color: #26323c;
+	box-shadow: 0 2px 2px #a8a8a8;
+}
+.badge-property-count {
+	width: 345px;
+	margin: 0 0 35px 40px;
+}
+.badge-property-count li {
+	float: left;
+	padding: 0 12px;
+	margin-right: 1px;
+	border-right: 1px solid #000;
+	border-left: 1px solid #3b464f;
+}
+.badge-property-count li:first-child {
+	border-left: none;
+	padding-left: 0;
+}
+.badge-property-count li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+.badge-property-count strong {
+	display: block;
+	height: 94px;
+	width: 94px;
+	margin-bottom: 15px;
+	border-radius: 47px;
+	background-color: #1e272d;
+	box-shadow: inset 0 0 6px 3px #0f1317;
+	text-align: center;
+	font-family: BebasNeue;
+	font-size: 4.14em;
+	line-height: 94px;
+}
+.badge-property-count .proposals strong {
+	color: #f4786f;
+}
+.badge-property-count .listings strong {
+	color: #faaf3a;
+}
+.badge-property-count .escrows strong {
+	color: #85abd2;
+}
+.badge-property-count span {
+	display: block;
+	color: #b3b3b3;
+	/*font-family: ProximaNovaBold;*/
+	text-align: center;
+	text-shadow: 0 -1px #171f25;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.badge-property-count-total {
+	width: 345px;
+	margin-left: 40px;
+	color: #b3b3b3;
+	/*font-family: ProximaNovaBold;*/
+	text-align: center;
+	text-shadow: 0 -2px #171f25;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.badge-property-count-total strong {
+	font-family: BebasNeue;
+	font-size: 1.84em;
+}
+.badge-property-total-value,
+.badge-property-total-commission {
+	position: absolute;
+	left: 450px;
+	width: 286px;
+	color: #b3b3b3;
+	/*font-family: ProximaNovaBold;*/
+	text-shadow: 0 -2px #171f25;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.badge-property-total-value {
+	top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.badge-property-total-commission {
+	top: 90px;
+	padding-top: 15px;
+	border-top: 1px solid #3c4750;
+}
+.badge-property-total-value strong,
+.badge-property-total-commission strong {
+	display: block;
+	font-family: BebasNeue;
+	font-size: 4.14em;
+	line-height: 60px;
+}
+
+/*****************************************************************************
+Property Control
+*****************************************************************************/
+#dashboard-properties-control {
+	height: 45px;
+	padding-top: 5px;
+	background-color: #dbdbdb;
+}
+.control-add {
+	display: block;
+	float: left;
+	margin-left: 30px;
+}
+.control-add strong {
+	display: inline-block;
+	font-size: 1.5em;
+	vertical-align: text-bottom;
+}
+.control-sort {
+	float: right;
+	margin-right: 30px;
+}
+.control-sort button {
+	padding-right: 30px;
+	background-image: url(../im/icon-arrow-down.gif);
+	background-repeat: no-repeat;
+	background-position: 70px 13px;
+}
+
+/*****************************************************************************
+Property Snapshot
+*****************************************************************************/
+.property-snapshot {
+	position: relative;
+	float: left;
+	height: 255px;
+	width: 205px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px 2px #888;
+	margin: 0 18px 40px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.property-snapshot:hover {
+	box-shadow: 0 0 8px 5px #888;
+}
+.property-snapshot strong {
+	display: block;
+	margin: 18px 0 5px 15px;
+	font-family: BebasNeue;
+	font-size: 1.84em;
+}
+.snapshot-address {
+	margin: 0 15px;
+	display: block;
+	color: #808080;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.snapshot-financial {
+	margin-left: 15px;
+	display: block;
+	color: #808080;
+	font-family: ProximaNovaBold;
+}
+.snapshot-stage,
+.snapshot-probability {
+	position: absolute;
+	left: 15px;
+	bottom: 40px;
+}
+.snapshot-stage {
+	font-family: ProximaNovaBold;
+	font-size: 0.76em;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+.stage-proposal .snapshot-stage {color: #f4786f;}
+.stage-listing .snapshot-stage {color: #faaf3a;}
+.stage-escrow .snapshot-stage {color: #85abd2;}
+.snapshot-probability {
+	left: auto;
+	right: 15px;
+	color: #808080;
+	font-family: BebasNeue;
+	font-size: 1.84em; 
+}
+
+/*****************************************************************************
+Property Detail Page
+*****************************************************************************/
+#property-detail .main {
+	color: #808080;
+}
+#property-detail .main {
+	padding-top: 30px;
+}
+.property-control-top {
+	padding: 10px 0 20px;
+	background-color: #456173;
+}
+.property-control-top button {
+	padding: 2px 10px;
+	border: 0;
+	border-radius: 3px;
+	background-color: #b3b3b3;
+	box-shadow: 0 2px 2px #0f1418;
+	font-family: ProximaNovaBold;
+	cursor: pointer;
+}
+button.control-close {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	border-radius: 10px;
+	background: url(../im/icon-close.gif) no-repeat center center #b3b3b3;
+	text-indent: -9999px;
+}
+.property-badge {
+	position: relative;
+	padding: 35px 0;
+	background-color: #26323c;
+	box-shadow: 0 2px 2px #a8a8a8;
+	color: #b3b3b3;
+}
+.property-image {
+	position: absolute;
+	top: 0;
+	left: 40px;
+}
+.property-badge h1 {
+	font-family: BebasNeue;
+	font-size: 4.15em;
+	line-height: 1em;
+}
+.property-name,
+.property-address,
+.property-summary,
+.property-financial {
+	margin-left: 216px;
+}
+.property-name {
+}
+.property-address {
+	font-size: 1.15em;
+}
+.property-financial {
+	width: 515px;
+	border-bottom: 1px solid #000;
+	padding: 5px 0 10px;
+	margin-bottom: 1px;
+	font-family: BebasNeue;
+	line-height: 1em;
+	font-size: 1.84em;
+}
+.property-price {
+}
+.property-commission {
+	margin-left: 5px;
+}
+.property-summary {
+	position: relative;
+	width: 515px;
+	padding-top: 10px;
+	text-transform: uppercase;
+	border-top: 1px solid #3b4650;
+}
+.property-summary > div {
+	float: left;
+	margin-right: 30px;
+	text-shadow: 0 -2px #222;
+}
+.stage-proposal .property-summary {color: #f4786f;}
+.stage-listing .property-summary {color: #faaf3a;}
+.stage-escrow .property-summary {color: #85abd2;}
+.property-type-icon {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: -2px 0 0 5px;
+	background-color: #f4786f;
+	-webkit-mask: url(../im/icon-property-type-residential.png) no-repeat center center;
+	line-height: 0;
+	vertical-align: bottom;
+}
+.property-stage {
+	position: relative;
+	width: 175px;
+}
+.property-stage .progress-bar {
+	top: 7px;
+	right: 0;
+	bottom: auto;
+	left: auto;
+}
+.property-stage .progress-bar,
+.property-stage .progress-bar li {
+	background-color: #1e272e;
+	box-shadow: inset 0 1px 1px #0b0f12;
+}
+.property-probability strong {
+	margin-left: 5px;
+	font-size: 1.53em;
+	font-family: BebasNeue;
+}
+.property-badge-edit {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 5px;
+	padding: 5px 10px;
+	color: #b3b3b3;
+	text-align: right;
+}
+.property-badge-edit:hover {
+	background-color: #3b4650;
+}
+.property-badge-edit:active {
+	background-color: #3b4650;
+	color: #fff;
+}
+
+/*****************************************************************************
+Property Detail Section
+*****************************************************************************/
+section {
+	position: relative;
+	margin-bottom: 40px;
+	border-radius: 0 0 5px 5px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px 2px #888;
+}
+section > strong {
+	display: block;
+	padding: 10px 15px 15px; 
+	color: #2f4758;
+	font-family: BebasNeue;
+	font-size: 1.53em;
+	text-transform: uppercase;
+}
+.section-body {}
+.section-body a {
+	text-decoration: none;
+	color: inherit;
+}
+.section-body a:hover {
+	text-decoration: underline;
+}
+.section-body > li {
+	padding: 10px 15px 10px 40px;
+	background-repeat: no-repeat;
+	background-position: 15px 11px;
+}
+.section-body > li > strong {
+	display: block;
+	font-family: ProximaNovaBold;
+}
+.section-control-top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+}
+.section-control-bottom {
+	padding: 5px;
+	border-top: 1px solid #ccc;
+}
+.section-control-top button,
+.section-control-bottom button {
+	padding: 3px 8px;
+}
+.section-control-edit {
+	float: right;
+}
+
+/*****************************************************************************
+Team
+*****************************************************************************/
+.team-member {
+	background-image:  url(../im/icon-person.gif);
+}
+/*****************************************************************************
+Contacts
+*****************************************************************************/
+.contact-individual {
+	background-image: url(../im/icon-person.gif);
+}
+.contact-name,
+.contact-email {
+	display: block;
+}
+/*****************************************************************************
+Documents
+*****************************************************************************/
+.documents-file {
+	background-image: url(../im/icon-file.gif);
+}
+/*****************************************************************************
+Useful Links
+*****************************************************************************/
+.link-item {
+	background-image: url(../im/icon-useful-link.gif);
+}
+/*****************************************************************************
+Progress
+*****************************************************************************/
+#progress {
+	border-radius: 0;
+	margin-bottom: 0;
+	background-color: #f9f9f9;
+}
+#progress .section-body {
+	padding-top: 10px;
+	padding-left: 15px;
+	min-height: 35px;
+}
+#progress .progress-bar {
+	left: auto;
+	bottom: auto;
+}
+#progress .progress-bar li {
+	position: relative;
+	margin-right: 90px;
+	cursor: pointer;
+}
+#progress .progress-bar li:hover {
+
+}
+#progress .progress-bar li:last-child,
+#progress .progress-bar li.on:last-child {
+	margin-right: 0;
+}
+#progress .progress-bar li.on {
+	margin-right: 88px;
+}
+.progress-pointer {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -3px;
+	height: 10px;
+	width: 19px;
+	background: url(../im/bg-progress-pointer.gif) no-repeat 0 0;
+	z-index: 3;
+}
+.on > .progress-pointer {
+	top: 33px;
+}
+.selected > .progress-pointer {
+	display: block;
+}
+
+/*****************************************************************************
+General Tasks & Marketing Tasks
+*****************************************************************************/
+#tasks li,
+#marketing li {
+	position: relative;
+	padding-left: 50px;
+}
+.task-overdue {
+	background-color: #ef916f;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.task-high-priority {
+	background-color: #f4b39a;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.tasks-item {
+	position: relative;
+}
+.task-checkbox {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	height: 20px;
+	width: 20px;
+	background-color: #f7c4b2;
+	border-radius: 11px;
+	box-shadow: 0 -1px 1px #666;
+}
+.task-checkbox:hover {
+	background-color: #ea7242;
+}
+.task-checkbox.completed {
+	top: 14px;
+	left: 14px;
+	border: 2px solid #fff;
+	border-radius: 11px;
+	background: url(../im/icon-check.gif) no-repeat center center #ef916f;
+	box-shadow: 0 1px 1px #666;
+}
+.task-time,
+.task-assignee  {
+	position: absolute;
+	right: 15px;
+}
+.task-time {
+	top: 10px;
+}
+.task-assignee {
+	bottom: 10px;
+}
+/*****************************************************************************
+Offer Matrix
+*****************************************************************************/
+#offer-matrix {}
+.offer-matrix-item {
+	position: relative;
+	background-image: url(../im/icon-file.gif);
+	cursor: pointer;
+}
+.offer-matrix-item:hover {
+	background-color: #ccc;
+}
+.offer-matrix-item:active {
+	background-color: #aaa;
+	color: #fff;
+}
+.offer-buyer-contact,
+.offer-buyer-phone {
+	display: inline;
+	padding-right: 5px;
+}
+.offer-amount,
+.offer-date {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	text-align: right;
+}
+.offer-date {
+	top: auto;
+	bottom: 10px;
+}
